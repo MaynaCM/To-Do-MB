@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --lilac-grey:#655D8A;
+  --lilac-ligth: #D8CFFF;
+  --lilac-deep: #030303;
+  --lilac-lightest: #F0EDFF;
+  --purple-base: #422E93;
+  --yellow-base:#FED21C;
+  --deep-blue: #070025;
+  --pink-base: #FFADFF;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.lilac-grey{color: #655D8A}
+.lilac-light{color: #D8CFFF;} 
+.lilac-deep{color: #030303}
+.lilac-lightest{ color:  #F0EDFF; }
+.purple-base{color:#422E93; } 
+.pink-base{
+  color:var(--pink-base)
+}
+
+
+/* Btns */
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.NewTask{
+  background-color: var(--lilac-ligth);
+  width: 60%;
+  border-radius: 20px;
+  padding: 4% 1% 4% 1%;
+  box-shadow: inset -3px 7px 3px rgba(0, 0, 0, 0.01), inset -2px 4px 3px rgba(0, 0, 0, 0.05), 
+  inset -1px 2px 2px rgba(0, 0, 0, 0.09), inset 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* SideBar*/
+
+.SideBar {
+  background-color: var(--lilac-lightest);
+  box-shadow: 0px 130px 52px rgba(0, 0, 0, 0.01), 0px 73px 44px 
+  rgba(0, 0, 0, 0.05), 0px 32px 32px rgba(0, 0, 0, 0.09), 0px 8px 18px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Icones */
+
+/* Banner */
+
+.Banner{
+
+  height: 16%;
+  background: var(--deep-blue);
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  border-radius: 20px;
+}
+
+.TextBanner{
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.SecundaryText{
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
 }
